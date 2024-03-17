@@ -30,7 +30,7 @@
 
 
                 <div class="card">
-                    <form action="{{ route('doctor.store') }}" method="POST">
+                    <form action="{{ route('doctor.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="card-header">
                             <h4>Input Text</h4>
@@ -87,8 +87,8 @@
                             <div class="form-group">
                                 <label>Photo</label>
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" name="photo">
-                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                    <input type="file" class="custom-file-input" name="photo" >
+                                    <label class="custom-file-label" for="photo">Choose file</label>
                                 </div>
                             </div>
 

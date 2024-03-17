@@ -24,6 +24,10 @@
                         <a class="nav-link"
                             href="{{ url('doctor') }}">Doctors</a>
                     </li>
+                    <li class="{{ Request::is('schedule') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('schedule') }}">Doctors Schedule</a>
+                    </li>
                 </ul>
             </li>
 

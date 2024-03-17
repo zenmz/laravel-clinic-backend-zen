@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Doctor;
+use App\Models\DoctorSchedule;
 use App\Models\ProfileClinic;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -33,6 +34,7 @@ class DatabaseSeeder extends Seeder
 
         ProfileClinic::factory(10)->create();
         Doctor::factory(10)->create();
+        DoctorSchedule::factory(10)->create();
         
     }
 }
