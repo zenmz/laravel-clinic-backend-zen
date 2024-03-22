@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Doctor;
 use App\Models\DoctorSchedule;
+use App\Models\Patient;
 use App\Models\ProfileClinic;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -34,7 +35,8 @@ class DatabaseSeeder extends Seeder
 
         ProfileClinic::factory(10)->create();
         Doctor::factory(10)->create();
-        DoctorSchedule::factory(10)->create();
+        // DoctorSchedule::factory(10)->create();
+        Patient::factory(10)->create();
         
     }
 }
